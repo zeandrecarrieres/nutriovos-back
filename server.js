@@ -26,19 +26,19 @@ app.use(cookieParser())
 // })
 
 
-const corsOptions = {
-  //origin:"https://nutriovos-frontend.herokuapp.com/",
-  origin:"https://eggerp-frontend.herokuapp.com",
-  credentials: true,
-}
+//const corsOptions = {
+ // origin:"https://nutriovos-frontend.herokuapp.com/",
+  //origin:"https://eggerp-frontend.herokuapp.com",
+  //credentials: true,
+//}
 
 app.use(cors(corsOptions))
 
-// app.use(cors({
-//   credentials:true,
-//   origin: ['*']
-//   // origin: ['http://localhost:3001', 'http://localhost:3000', 'https://eggerp-frontend.herokuapp.com/']
-// }));
+app.use(cors({
+  credentials:true,
+  origin: ['*']
+  origin: ['http://localhost:3001', 'http://localhost:3000', 'https://nutriovos-frontend.herokuapp.com/']
+}));
 app.use(express.json());
 
 
