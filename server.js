@@ -27,7 +27,7 @@ app.use(cookieParser())
 
 
 const corsOptions = {
-  origin:"http://localhost:3000",
+  origin:"https://nutriovos-frontend.herokuapp.com/",
  // origin:"https://eggerp-frontend.herokuapp.com",
   credentials: true,
 }
